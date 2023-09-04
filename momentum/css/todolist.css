@@ -1,0 +1,101 @@
+.todo_list {
+  width: 450px;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-40%);
+  opacity: 0;
+  transition: 0.5s;
+}
+.todo_list_bgColor {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.todo_list h1 {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+.todo_list_content {
+  width: 28.125rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo_list_add {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.todo_list_add input {
+  width: 75%;
+  height: 40px;
+  padding: 0 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 3px solid #ccc;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.todo_list_add button {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  border: 3px solid #ccc;
+  border-radius: 7px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.todo_list_add button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+.todo_list_push {
+  width: 100%;
+  height: 100%;
+  padding: 30px 0;
+}
+.todo_list_push ul li {
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.todo_list_push ul span {
+  width: 100%;
+  word-break: break-all;
+}
+.todo_list_push ul li button {
+  border: none;
+  background-color: transparent;
+  margin: 0 5px;
+  cursor: pointer;
+}
+/* .todo_list_push ul li::before{
+  content: "\f005";
+  font-family: fontawesome;
+  margin-right: 20px;
+} */
+
+/* effect */
+.active {
+  transform: translateY(-50%);
+  opacity: 1;
+}
+.checkLine {
+  text-decoration: line-through;
+}

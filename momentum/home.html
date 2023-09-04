@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/1792b891d9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/js/background.js"></script>
+  <script defer src="/js/clock.js"></script>
+  <script defer src="/js/greeting.js"></script>
+  <script defer src="/js/quote.js"></script>
+  <script defer src="/js/todolist.js"></script>
+  <script defer src="/js/weather.js"></script>
+  <title>Yds Momentum</title>
+</head>
+<body>
+  <div class="container">
+    <div class="todo_list">
+      <div class="todo_list_bgColor">
+        <h1>Todo List</h1>
+        <div class="todo_list_content">
+          <form class="todo_list_add">
+            <input type="text" placeholder="Write Your Todo" class="todo_list_input" />
+            <button class="add_btn">Add</button>
+          </form>
+          <div class="todo_list_push">
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="nav_btn">
+        <div class="nav_btn_changeBg">
+          <span>CHANGE <br>BACKGROUND</span>
+        </div>
+        <div class="nav_btn_todoList">
+          <span>TODO LIST</span>
+        </div>
+      </div>
+      <div class="weather_info">
+        <img class="weather_icon"></img> 
+        <div class="weather">
+          <span id="city"></span>
+          <div>
+            <span id="temp"></span>
+            <span id="state"></span>
+          </div>
+        </div>
+        <div class="detail">
+          <span id="wind"></span>
+          <span id="humidity"></span>
+          <span id="cloud"></span>
+          <span id="temp_min"></span>
+          <span id="temp_max"></span>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section_logo">
+        <span>DS</span>
+      </div>
+      <div class="section_content">
+        <div class="content_date">
+          <span></span>
+        </div>
+        <div class="content_clock">
+          <span>00 : 00 : 00</span>
+        </div>
+        <div class="content_greeting">
+          <h1>HELLO WORLD</h1>
+        </div>
+        <form class="content_login">
+          <input type="text" class="user_name" placeholder="Write Your Name" />
+          <button class="login_btn">Log In</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="quote">
+        <span class="quote_content">성공은 영원하지 않고, 실패는 치명적이지 않다
+        </span>
+        <span class="quote_author">- Mike Ditka -</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
